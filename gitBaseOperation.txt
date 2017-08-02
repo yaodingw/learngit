@@ -56,9 +56,7 @@ git reset HEAD example.txt //撤销提交到暂存区的数据到工作区，工
 
 
 ---------git  文件删除----------
-git rm file
-
-
+git rm file    //这个文件是版本库中的文件，并且在工作区被删除了，可以使用git checkout -- file 来回复，如果真的是要删除使用此命令，然后把这个操作commit到到版本库中
 
 
 
