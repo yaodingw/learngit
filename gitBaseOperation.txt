@@ -55,4 +55,11 @@ git reset HEAD example.txt //撤销提交到暂存区的数据到工作区，工
 3.提交了不合适的文件到了版本库，根据命令 git reset --head HEAD^ 来回退版本。前提是没有推送到远程仓库
 
 
+---------git  文件删除----------
+git rm file
+
+
+
+
+
 
