@@ -87,6 +87,13 @@ git merge dev //合并dev分支到当前分支上，
 git branch -d dev //删除分支dev
 
 
+-----------git 冲突解决------------
+在使用git merge dev 产生冲突的时候
+使用vim file 到昌盛冲突的文件根据========分割的文件来手动合并
+合并的结果在来git add file
+git commit -m 'balabala'
+使用命令查看分支合并的情况
+git log --graph --pretty=oneline --abbrev-commit  //此命令可以看到图像的形式
 
 
 
