@@ -18,6 +18,26 @@ git add example.txt  //多个文件只要在example.txt后面空格接着跟就o
 git status  //查看当前git的仓库的状态（暂存区的情况）
 git commit -m '提交文件的备注'
 
+--------------git文件回退--------------
+git diff example.txt //把当前文件跟之前的一个版本进行比较
+
+git log   //查看提交记录
+
+git log --pretty=oneline  //在一行中查看提交记录
+
+git reset --hard HEAD^  //回退到上一个版本
+
+git reset --hard HEAD^^ //回到上第二个版本
+
+git reset --hard HEAD~100 //回到上第100个版本
+
+git reset --hard dfdfdfd  //会退到dfdfdfd版本  （linux 复制粘贴  y p） 
+
+my stupid boss still use svn;
+
+
+
+
 
 
 
