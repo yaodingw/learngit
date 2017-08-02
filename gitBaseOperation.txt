@@ -1,0 +1,25 @@
+-------------------git 安装-------------
+linux环境配置git环境： sudo apt-get install git   //安装git 
+git config --global user.name "username" 
+git config --global user.email "username@gmail.com" //配置用户名和邮箱 
+
+-----------------创建版本库------------------
+eg:
+mkdir learnGit
+cd learnGit
+git init
+(成功后会在当前目录下生成一个.git文件)
+
+
+
+---------------git 基本操作-----------
+vim example.txt 
+git add example.txt  //多个文件只要在example.txt后面空格接着跟就ok;git add 1.txt 2.txt
+git status  //查看当前git的仓库的状态（暂存区的情况）
+git commit -m '提交文件的备注'
+
+
+
+
+
+
