@@ -33,7 +33,25 @@ git reset --hard HEAD~100 //回到上第100个版本
 
 git reset --hard dfdfdfd  //会退到dfdfdfd版本  （linux 复制粘贴  y p） 
 
-my stupid boss still use svn;
+
+
+-----------------------git 工作区和暂存区-----------------
+简单来说 执行git add操作之前的文件都是在工作区的
+执行add操作之后commit操作之前都是在暂存区的
+执行commit命令之后，文件从暂存区进入到版本库中，暂存区的文件会被删除
+
+
+---------------git 撤销操作-----------
+git checkout -- example.txt   //还在工作去没有提交到暂存区的时候
+//一定要加--没有--，就会变成了“切换到另一个分之”的命令，在后面的分之管理会再次遇到git checkout 命令
+
+
+
+
+
+
+
+
 
 
 
