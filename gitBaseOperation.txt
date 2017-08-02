@@ -45,19 +45,14 @@ git reset --hard dfdfdfd  //会退到dfdfdfd版本  （linux 复制粘贴  y p�
 git checkout -- example.txt   //还在工作去没有提交到暂存区的时候
 //一定要加--没有--，就会变成了“切换到另一个分之”的命令，在后面的分之管理会再次遇到git checkout 命令
 
+git reset HEAD example.txt //撤销提交到暂存区的数据到工作区，工作区文件的撤销如上
 
 
 
-
-
-
-
-
-
-
-
-
-
+---------git 情景模拟-----
+1.改乱了工作区的某个文件，想要直接丢弃重新来过，使用命令   git checkout -- file
+2.不但改乱了工作去而且还把文件提交到了暂存区，使用 git reset HEAD file,这样文件回到了工作区，然后按照场景一的操作来修改
+3.提交了不合适的文件到了版本库，根据命令 git reset --head HEAD^ 来回退版本。前提是没有推送到远程仓库
 
 
 
